@@ -16,6 +16,8 @@ We use the Cars Dataset, which contains 16,185 images of 196 classes of cars. Th
 
 You can get it from [Cars Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html):
 
+Please put both tgz files into the folder in order to run properly. 
+
 ## Usage
 
 ### Data Pre-processing
