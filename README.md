@@ -20,6 +20,9 @@ Please put both tgz files into the folder in order to run properly.
 
 ## Usage
 
+### Quick-start
+You need to add a model folder with the appropriate [weights](https://drive.google.com/file/d/0Byy2AcGyEVxfeXExMzNNOHpEODg/view) and a trained [model](https://github.com/foamliu/Car-Recognition/releases/download/v1.0/model.96-0.89.hdf5) to save time on training and test the demo quickly
+
 ### Data Pre-processing
 Extract 8,144 training images, and split them by 80:20 rule (6,515 for training, 1,629 for validation):
 ```bash
