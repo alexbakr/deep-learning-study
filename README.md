@@ -50,12 +50,7 @@ $ python test.py
 ### Demo
 
 ```bash
-$ python demo.py --i [image_path]
+$ python custom_demo.py --i [image_path]
 ```
-If no argument, a sample image is used:
+If no argument, a sample image is used; will return the model, confidence, and median price
 
-```bash
-$ python demo.py
-class_name: Lamborghini Reventon Coupe 2008
-prob: 0.9999994
-```
