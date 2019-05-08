@@ -15,12 +15,13 @@ MARKET_CHECK_API_KEY = 'nhxAhnIxAUwXyc0qDINPgmTn2HYoIy0n'
 MARKET_CHECK_API_URL = 'http://api.marketcheck.com/v1/stats?api_key=%s&ymm=%d|%s|%s'
 
 def load_value_from_prediction(prediction):
-	split_data = prediction.split(' ')
+	split_pred = prediction.split(',')
+	split_data = split_pred[0].split(' ')
 	make = split_data[0]
-	model = split_data[1]
-	year = int(split_data[3])
+	model = split_data[1:-2]
+	year = int(split_data[-1])
 	
-	formatted_url = MARKET_CHECK_API_URL % (MARKET_CHECK_API_KEY, year, make, model)
+	formatted_url = MARKET_CHECK_API_URL % (MARKET_CHECK_API_KEY, year, make, "%20".join(model))
 	print(f'Request URL: {formatted_url}')
 	
 	headers = {
